@@ -57,7 +57,7 @@ if ($replenishment_deposit == true) {
         $days_mt = check_month_days($days);
         $total = $total + formula_replenishment($days_mt, $total, $deposit_replenishment_amount);
 
-        echo '<div>' . $total. '</div>';
+//        echo $total;
     }
 
 } elseif ($replenishment_deposit == false) {
@@ -67,7 +67,6 @@ if ($replenishment_deposit == true) {
 
     $days = $date;
     $total = $deposit_amount;
-
     while ($deposit_period_months != 0) {
 
         $deposit_period_months = $deposit_period_months -1;
@@ -78,14 +77,13 @@ if ($replenishment_deposit == true) {
         $days_mt = check_month_days($days);
         $total = $total + formula($days_mt, $total);
 
-        echo 2,4,5;
+//        echo $total;
     }
 } else {
     echo "Где-то ошибка";
 }
 
-
-
+echo $total;
 
 
 

@@ -11,11 +11,9 @@ $(document).ready(function() {
            contentType: false,
            cache: false,
            processData: false,
-           success: function() {
-               $('#result').text(result);
+           success: function(data) {
+               $('#result_id').html(data);
            },
-           // success: function(result) {
-           //  alert(result);
        });
     });
 

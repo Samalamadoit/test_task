@@ -84,7 +84,7 @@
                     <input type="submit" value="Рассчитать" class="calculator-form__button">
                     <div class="calculator-form__result">
                         Результат:
-                        <div id="result"></div>
+                        <div id="result_id"></div>
                     </div>
                 </form>
             </div>
