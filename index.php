@@ -28,6 +28,7 @@
                     <li class="nav__item nav__item_top"><a href="/" class="">Друзья</a></li>
                     <li class="nav__item nav__item_top"><a href="/" class="">Интернет-Банк</a></li>
                 </ul>
+
             </nav>
         </div>
     </header>
