@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  min-width: 320px;
+  background: $background-color;
+  font: 16px/1.5 'Arial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+.container {
+  width: 1000px;
+  position: relative;
+}
+
+.button-disable {
+  background: darkgrey;
+}

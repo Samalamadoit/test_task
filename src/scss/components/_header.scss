@@ -1,0 +1,64 @@
+.header {
+
+    @include center;
+
+    &__container {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 70px;
+        width: 190px;
+    }
+
+    &__nav {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    &__phone {
+        //???
+    }
+
+    &__phone .number {
+        display: block;
+        font-size: 18px;
+        font-family: Europe, sans-serif;
+        font-weight: 300 ;
+        color: $color-orange;
+    }
+
+}
+
+.nav {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        @include flex;
+    }
+
+    &__item_top {
+        background: $color-black;
+        padding: 15px 41px;
+        border-right: 2px solid $color-orange;
+    }
+
+    // т.к. страница одна, то сделал просто вот так
+    &__item_top:nth-child(2) {
+        background: $color-orange;
+    }
+
+    &__item:last-child {
+        border-right: none;
+    }
+
+    &__item a {
+        font-size: 14px;
+        color: white;
+    }
+
+}

@@ -1,0 +1,40 @@
+.main {
+
+  @include center;
+
+  &__container {
+    padding: 0 10px;
+  }
+}
+
+.breadcrumbs {
+
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  &__item {
+    text-decoration: underline;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  &__item::after {
+    content: "-";
+    margin-left: 3px;
+    margin-top: 4px;
+    text-decoration: none;
+    position: absolute;
+  }
+
+  &__item:last-child:after {
+    content: "";
+  }
+
+  &__item:last-child {
+    text-decoration: none;
+  }
+
+
+
+}
